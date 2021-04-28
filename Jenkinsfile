@@ -5,7 +5,7 @@ pipeline {
         stage('CPU')
         {
             steps {
-                sh 'cat /proc/cpuinfo'
+                sh 'cat /proc/cpuinfo | grep processor | wc -l '
             }
         }
         stage('Memory')
