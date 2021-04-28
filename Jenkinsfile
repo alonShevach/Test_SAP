@@ -20,8 +20,7 @@ pipeline {
         stage('OS')
         {
             steps {
-                sh 'echo cat /etc/*release'
-                sh 'echo cat /proc/version'
+                sh 'echo cat /etc/os-release'
             }
         }
     }
