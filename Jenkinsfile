@@ -14,7 +14,7 @@ pipeline {
         stage('Memory')
         {
             steps {
-            sh 'echo free -t'
+            sh 'free -t'
             }
         }
         stage('OS')
