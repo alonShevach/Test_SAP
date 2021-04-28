@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('git') {
-            steps {
-                git branch: 'main', credentialsId: '60be71a8-fb85-40c3-89d3-e3f41e910d0c', url: 'https://github.com/alonShevach/Test_SAP.git'
-            }
-        }
         stage('CPU')
         {
             steps {
