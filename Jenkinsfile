@@ -20,8 +20,8 @@ pipeline {
         stage('OS')
         {
             steps {
-                sh 'chmod echo uname -a'
-                sh 'chmod echo cat /proc/version'
+                sh 'echo cat /etc/*release'
+                sh 'echo cat /proc/version'
             }
         }
     }
